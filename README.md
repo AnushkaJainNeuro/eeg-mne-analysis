@@ -47,3 +47,26 @@ responds to specific events - sounds and images shown during the recording.
 ### New skills I learned
 Event handling, epoching, averaging to compute ERPs, and comparing conditions.
 
+---
+
+## Project 3: Frequency Band Power Analysis
+
+For this project, I learnt to divide the EEG signal into the five classic brain wave bands and measure how much power is in each.
+
+![EEG Power Across Frequency Bands](frequency_bands.png)
+
+### What I did
+- I computed the power spectral density and extracted the underlying numbers (power at each frequency, for each channel)
+- Defined the five standard EEG frequency bands: Delta (0.5–4 Hz), Theta (4–8 Hz), Alpha (8–13 Hz), Beta (13–30 Hz), and Gamma (30–45 Hz)
+- For each band, I selected the frequencies that fall inside it and averaged their power across all channels to get a single band-power value
+- To visualize it clearly, I graphed the result as a bar chart comparing power across the bands
+
+### What I found
+- I saw that low-frequency Delta band has the highest power. Power steadily decreases toward the higher bands (Gamma), reflecting the "1/f" pattern seen in EEG.
+- I thought that because raw power is heavily weighted toward the slow waves, a natural next step would be computing relative band power, which makes for a fairer comparison across bands
+
+### New skills added
+Extracting numerical data from a spectrum, isolating frequency bands, computing band power, and interpreting the 1/f structure of EEG.
+
+
+
