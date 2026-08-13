@@ -68,5 +68,25 @@ For this project, I learnt to divide the EEG signal into the five classic brain 
 ### New skills added
 Extracting numerical data from a spectrum, isolating frequency bands, computing band power, and interpreting the 1/f structure of EEG.
 
+---
+
+## Project 4: Quantitative Condition Comparison
+
+Building on the ERP analysis in Project 2, I moved from visually comparing brain responses to actually measuring the difference with numbers.
+
+![Auditory vs Visual: Peak Timing Comparison](condition_comparison.png)
+
+### What I did
+- For this project I reused the epoching and averaging pipeline from Project 2 to get the averaged auditory and visual responses
+- I used peak detection to extract the exact peak time and amplitude of each response, instead of eyeballing the plot
+- Calculated the timing difference between the two conditions in milliseconds
+- Visualized both responses with each measured peak marked
+
+### What I found
+- The auditory response peaked at 0.095 s and the visual response at 0.175 s (a difference of about 80 ms)
+- This quantitatively confirmed that the brain responds to sound faster than to images, reflecting that auditory and visual information are processed on different timescales
+
+### New skills added
+Feature extraction (peak time and amplitude), quantitative comparison between conditions, and turning a visual observation into a measured result 
 
 
